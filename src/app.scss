@@ -135,6 +135,9 @@ input:checked {
   .cards_item {
     width: 100%;
   }
+  body {
+    padding-top: 50px;
+  }
   .mqDropdown {
     display: none;
   }
@@ -144,11 +147,17 @@ input:checked {
   .cards_item {
     width: 50%;
   }
+  body {
+    padding-top: 50px;
+  }
 }
 
 @media (min-width: 66rem) {
   .cards_item {
     width: 33.3333%;
+  }
+  body {
+    padding-top: 0px;
   }
   .mqDropdown {
     display: block;
@@ -158,5 +167,8 @@ input:checked {
 @media (min-width: 105rem) {
   .cards_item {
     width: 20%;
+  }
+  body {
+    padding-top: 0px;
   }
 }
