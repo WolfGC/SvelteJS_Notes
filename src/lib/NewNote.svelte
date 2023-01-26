@@ -237,4 +237,9 @@
       width: 25rem;
     }
   }
+  @media (max-width: 27rem) {
+    form {
+      width: 20rem;
+    }
+  }
 </style>
