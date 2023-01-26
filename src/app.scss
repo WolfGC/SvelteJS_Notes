@@ -49,7 +49,6 @@ $text: #fff;
   }
 }
 .card {
-  //background-color: white;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -83,8 +82,6 @@ $text: #fff;
     line-height: 1.5;
     margin-bottom: 1.25rem;
     font-weight: 400;
-    /* height: 100%; */
-    /* overflow-y: hidden; */
     width: 100%;
     overflow: hidden;
     word-break: break-word;

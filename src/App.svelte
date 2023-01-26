@@ -59,11 +59,11 @@
   }
 </script>
 
-<!-- WRAPPED IN AN #APP DIV FOR PUBLISH -->
-<!-- https://hrishikeshpathak.com/blog/svelte-gh-pages/ -->
-
 <div id="app">
-  <a href="https://github.com/WolfGC" target="_blank"
+  <a
+    href="https://github.com/WolfGC/SvelteJS_Notes"
+    rel="noreferrer"
+    target="_blank"
     ><h3>
       SvelteJS Notes By Vincent Wolfgram <i class="fa-brands fa-github" />
     </h3></a
