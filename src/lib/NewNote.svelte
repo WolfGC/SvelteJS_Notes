@@ -12,6 +12,7 @@
   let bounce = false;
   let shake = true;
   let empty = true;
+  let spin = false;
 
   function pinAnimation() {
     bounce = !bounce;
@@ -21,8 +22,13 @@
   function checkInput() {
     if (title == "" || folder == "") {
       empty = true;
+      document
+        .getElementById("createBtn")
+        .setAttribute("title", "Title and Folder required");
     } else {
       empty = false;
+      document.getElementById("createBtn").removeAttribute("title");
+      spin = false;
     }
   }
 
@@ -53,6 +59,7 @@
     content = "";
     shake = true;
     bounce = false;
+    spin = true;
   };
 </script>
 
@@ -82,6 +89,8 @@
       <button
         id="createBtn"
         disabled={empty}
+        class:spin
+        title="Title and Folder required"
         on:click={addNote}
         on:click={checkInput}
       >
@@ -189,6 +198,10 @@
     animation-name: shake;
     animation-duration: 0.5s;
   }
+  .spin {
+    animation-name: spin;
+    animation-duration: 0.5s;
+  }
   @keyframes bounce {
     0% {
       transform: translateY(-2px);
@@ -230,6 +243,14 @@
     }
     100% {
       transform: rotate(0);
+    }
+  }
+  @keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
     }
   }
   @media (max-width: 66rem) {
