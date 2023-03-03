@@ -102,8 +102,8 @@
 
 <style>
   .newNoteCont {
-    overflow: hidden;
-    min-height: 40vh;
+    /*overflow: hidden;*/
+    min-height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
